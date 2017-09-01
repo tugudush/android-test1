@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">test1</string>
+    <string name="jerome">Jerome</string>
+    <string name="jocelyn">Jocelyn</string>
+    <string name="jacob">Jacob</string>
 </resources>

@@ -1,56 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context="com.example.jerom.test1.MainActivity">
 
+    <TextView
+        android:id="@+id/jerome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/jerome"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#333"
+    />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/jocelyn"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#000"
+    />
 
-    <RelativeLayout
-        android:orientation="horizontal"
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/jerome"
+        android:text="@string/jacob"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#444"
+    />
 
-        <TextView
-            android:id="@+id/jerome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:text="jerome"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:background="#333"
-        />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:text="jocelyn"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:background="#000"
-        />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/jerome"
-            android:text="jacob"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:background="#444"
-        />
-
-    </RelativeLayout>
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
